@@ -45,7 +45,7 @@
 					-->
 					<div class="inner" style="padding: 0px;">
 						
-						<div style="width: 100%; background: #000000aa; text-align: center; padding: 10em 6em;">
+						<div style="width: 100%; background: #00000090; text-align: center; padding: 10em 6em;">
 							<div class="col-12 col-12-narrower">
 	
 								<p style="font-size: 500%;">Robot Design</p>
@@ -234,7 +234,7 @@
 
 									<div class="sidebar">
 										<section>
-											<img src="images/ir_circuit.jpg" alt="IR Circuit" style="width: 100%;" />
+											<img src="images/ir_circuit.png" alt="IR Circuit" style="width: 100%;" />
 											<header>
 												<h3>IR Frequency Detection</h3>
 											</header>
@@ -277,11 +277,11 @@
 
 								<div class="sidebar">
 									<section>
-										<img src="images/computer_vision.jpg" alt="Computer Vision" style="width: 100%;" />
+										<img src="images/computer_vision.png" alt="Computer Vision" style="width: 100%;" />
 										<header>
 											<h3>Computer Vision</h3>
 										</header>
-										<p>Using OpenCV to filter the image and extract contours, we were able to identify whether or not an Ewok was present in the frame of the camera, and if so, the location of the center of the Ewok</p>
+										<p>OpenCV was used to filter the image and extract contours, so we were able to identify whether or not an Ewok was present in the frame of the camera, and if so, the location of the center of the Ewok</p>
 									</section>
 								</div>
 
@@ -292,18 +292,33 @@
 
 							<div class="sidebar">
 								<section>
-									<img src="images/arm_control.jpg" alt="Arm Control" style="width: 100%;" />
+									<img src="images/arm_control.png" alt="Arm Control" style="width: 100%;" />
 									<header>
 										<h3>Arm Control</h3>
 									</header>
-									<p>The position of the Ewok within the image was converted to the servo motor angles required to position the claw directly above the Ewok</p>
+									<p>Using vector mathematics, the position of the Ewok within the image was converted to the servo motor angles required to position the claw directly above the Ewok</p>
 								</section>
 							</div>
 
 						</div>
 
-						<!-- Communication -->
+						<!-- Tape Following -->
 						<div class="col-4 col-12-narrower">
+
+								<div class="sidebar">
+									<section>
+										<img src="images/tape_following.jpg" alt="Tape Following" style="width: 100%;" />
+										<header>
+											<h3>Tape Following</h3>
+										</header>
+										<p>A PID algorithm was used to ensure our robot continuously corrected for any deviation from the tape</p>
+									</section>
+								</div>
+
+						</div>
+
+						<!-- Communication -->
+						<!-- <div class="col-4 col-12-narrower">
 
 							<div class="sidebar">
 								<section>
@@ -315,26 +330,13 @@
 								</section>
 							</div>
 
-						</div>
+						</div> -->
 					</div>
-					<div class="row gtr-150">
+					<!-- <div class="row gtr-150">
 
-							<!-- Tape Following -->
-							<div class="col-4 col-12-narrower">
+							
 
-									<div class="sidebar">
-										<section>
-											<img src="images/tape_following.jpg" alt="Tape Following" style="width: 100%;" />
-											<header>
-												<h3>Tape Following</h3>
-											</header>
-											<p>A PID algorithm was used to ensure our robot continuously corrected for any deviation from the tape</p>
-										</section>
-									</div>
-
-							</div>
-
-						</div>
+					</div> -->
 				</section> <!-- end Software -->
 
 			</article>
