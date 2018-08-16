@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style type="text/css">
@@ -27,136 +28,149 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt">
-					
-                    <h1><a href="index.html"><span style="font-size: 200%; font-weight: bold; margin-right: 10px;">SPARQEE</span> <span>a UBC ENG PHYS 253 Robot</span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="index.html">Home</a></li>
-							<li><a href="robot_design.html">Robot Design</a></li>
-							<li><a href="robot_performance.html">Robot Performance</a></li>                                
-							<li><a href="team.html">Meet the Team</a></li>
-							</li>
-						</ul>
-					</nav> 
-				</header>
+			<header id="header" class="alt">		
+				<h1><a href="index.html"><span style="font-size: 200%; font-weight: bold; margin-right: 10px;">SPARQEE</span> <span>an Autonomous Robot</span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="index.html">Home</a></li>
+						<li><a href="robot_design.html">Design</a></li>
+						<li><a href="robot_performance.html">Performance</a></li>                                
+						<li><a href="team.html">Meet the Team</a></li>
+						</li>
+					</ul>
+				</nav> 
+			</header>
 
 			<!-- Banner -->
-				<section id="banner">
+			<section id="banner">
 
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
+				<!--
+					".inner" is set up as an inline-block so it automatically expands
+					in both directions to fit whatever's inside it. This means it won't
+					automatically wrap lines, so be sure to use line breaks where
+					appropriate (<br />).
+				-->
+				<div class="inner">
+
+					<!-- <img src="images/SPARQEE_360.gif"  style="height: 400px;">
+					<img src="images/team.png"  style="height: 400px;">
+					<br/><br/> -->
+					<!-- <span>Team 11 (from left to right): Noah Tajwar, Sean Bergman, Yas Oloumi Yazdi, Oleksii (Alex) Proskurin</span><br/><br/> -->
+					<header>
+						<h2>SPARQEE</h2>
+					</header>
+					<p id="acronym"><b>S</b>pecial <b>P</b>urpose <b>A</b>utonomous <b>R</b>obot for <b>Q</b>uick <b>E</b>wok <b>E</b>xtraction</p>
+					<footer>
+						<ul class="buttons stacked">
+							<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+						</ul>
+					</footer>
+
+				</div>
+
+			</section>
+
+			<!-- The Challenge -->
+			<article id="main">
+
+				<header class="container">
+					<div style="text-align: center;">
+						<img src= "images/eng_phys.png" width="200px">
+					</div>
+					<br>
+					
+					<h2>EWOK RESCUE! 2018 UBC ENGINEERING PHYSICS ROBOT COMPETITION</h2>
+					
+					<p>
+						For more than fifteen years, this robotics competition has been a core part of the second year UBC Engineering Physics program. The competition acts as the final exam of our intensive four month course, <i>ENPH 253: Introduction to Instrument Design</i>. For most of us, this was our first time getting practice in 
+						<li>Engineering design and instrument development including mechanical and electrical design</li>
+						<li>Communications with sensors, and actuators</li>
+						<li>Micro-controller implementation and system integration</li>
+					</p>
+					<br/><br/>
+				</header>
+
+				<section class="banner" style="background-image: url('../../images/ewok.jpg');">
+
 					<div class="inner">
 
-						<img src="images/SPARQEE_360.gif"  style="height: 400px;">
-						<img src="images/team.png"  style="height: 400px;">
-						<br/><br/>
-                        <!-- <span>Team 11 (from left to right): Noah Tajwar, Sean Bergman, Yas Oloumi Yazdi, Oleksii (Alex) Proskurin</span><br/><br/> -->
-                        <header>
-							<h2>SPARQEE</h2>
-						</header>
-						<p id="acronym"><b>S</b>pecial <b>P</b>urpose <b>A</b>utonomous <b>R</b>obot for <b>Q</b>uick <b>E</b>wok <b>E</b>xtraction</p>
-						<footer>
-							<ul class="buttons stacked">
-								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-							</ul>
-						</footer>
+						<div class="row gtr-50" style="width: 1000px; background: #00000088; padding: 6em;">
+							<div class="col-12 col-12-narrower">
+	
+								<p>Chewbacca and his adorable Ewok associates are trapped inside the evil Empire stronghold! Our role was to develop a autonomous robot to save Chewbacca and the Ewoks.</p>
+	
+							</div>
+						</div>
 
 					</div>
 
 				</section>
 
-			<!-- The Challenge -->
-				<article id="main">
+				<header>
+					<!-- <p>
+						<strong>The Story</strong>:<br>
+						Chewbacca and his adorable Ewok associates are trapped inside the evil Empire stronghold!
+						Our role was to develop a robot to autonomously save Chewbacca and the Ewoks.<br>
+					</p> -->
+					<p> </p>
+					<p>
+						<strong>The Competition Surface:</strong></p>
+					
+					
+							<p>
+						<img src= "competitionSurface.png" width="500" height="400">
+								
+								
+						
+					</p>
+						<p> 
+							<strong>The Challenge: </strong>
+							<li>Cross a chasm (the first gap) to enter the stronghold</li>
+							<li>Make way through the stronghold without triggering the stormtrooper alarm (IR beacon emitting signals of different frequencies)</li>
+							<li>Climb up onto the prison tower (crossing the second gap)</li>
+							<li>Traverse a suspension bridge above a lava pit</li>
+							<li>Ride a zipline back to rescue rendezvous point at the start of the course</li>
+								
+					</p>
+					
+					<p>
+						<strong>CAD Model of SPARQEE on Competition Surface   </strong> </p>
+					
+					
+							<p>
+						<img src= "sparqeeOnCompSurfaceCAD.png" width="500" height="500">
+								
+								
+						
+					</p>
+					
+					<p>
+						<strong>SPARQEE on Competition Day   </strong> </p>
+					
+					
+							<p>
+						<img src= "spar1.png"  style="width:100%;">
+								<img src= "spar2.jpg"  width= "500" height= "650">
+								
+								
+						
+					</p>
+					
+				</header>
 
-					<header class="container">
-                    	<div style="text-align: center;">
-							<img src= "images/eng_phys.png" width="200px">
-						</div>
-                        <br>
-                      
-						<h2>EWOK RESCUE! 2018 UBC ENGINEERING PHYSICS ROBOT COMPETITION</h2>
-                        
-                        <p> <strong>Introduction </strong>: <br>  For more than fifteen years, this robotics competition has been a core part of the second year UBC Engineering Physics program. The competition acts as the final exam of our intensive four month course, ENPH 253: Introduction to Instrument Design. For most of us, this was our first time getting practice in 
-                            <li>engineering design and instrument development including mechanical and electrical design</li>
-                            <li>communications with sensors, and actuators</li>
-                            <li>micro-controller implementation and system integration, </li>  all of which came together in our robot design.
-                        <br>
-                        
-                         </p>
-                        <p> </p>
-                        
-                        <p> <strong>The Story </strong>: <br>  Chewbacca and his adorable ewok associates are trapped inside the evil Empire stronghold!
-                        Our role was to develop  C-3PO (our robot, SPARQEE) to autonomously save Chewbacca and the ewoks.<br>
-                        
-                         </p>
-                        <p> </p>
-                        <p>
-                         <strong>The Competition Surface:    </strong> </p>
-                        
-                        
-                                <p>
-                            <img src= "competitionSurface.png" width="500" height="400">
-                                    
-                                    
-                            
-                        </p>
-                           <p> 
-                               <strong>The Challenge: </strong>
-                               <li>Cross a chasm (the first gap) to enter the stronghold</li>
-                               <li>Make way through the stronghold without triggering the stormtrooper alarm (IR beacon emitting signals of different frequencies)</li>
-                               <li>Climb up onto the prison tower (crossing the second gap)</li>
-                               <li>Traverse a suspension bridge above a lava pit</li>
-                               <li>Ride a zipline back to rescue rendezvous point at the start of the course</li>
-                                   
-						</p>
-                        
-                        <p>
-                         <strong>CAD Model of SPARQEE on Competition Surface   </strong> </p>
-                        
-                        
-                                <p>
-                            <img src= "sparqeeOnCompSurfaceCAD.png" width="500" height="500">
-                                    
-                                    
-                            
-                        </p>
-                        
-                        <p>
-                         <strong>SPARQEE on Competition Day   </strong> </p>
-                        
-                        
-                                <p>
-                            <img src= "spar1.png"  style="width:100%;">
-                                    <img src= "spar2.jpg"  width= "500" height= "650">
-                                    
-                                    
-                            
-                        </p>
-                        
-                        
-                        
-					</header>
-
-         
-
-		
+        	</article>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
