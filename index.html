@@ -7,11 +7,21 @@
 <html>
     
 	<head>
-		<title>Twenty by HTML5 UP</title>
+		<title>SPARQEE</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style type="text/css">
+		
+		#acronym b
+		{
+			color: #ff0055;
+		}
+
+		</style>
+
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
@@ -19,31 +29,14 @@
 			<!-- Header -->
 				<header id="header" class="alt">
 					
-                    <h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
+                    <h1><a href="index.html"><span style="font-size: 200%; font-weight: bold; margin-right: 10px;">SPARQEE</span> <span>a UBC ENG PHYS 253 Robot</span></a></h1>
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="index.html">Home</a></li>
-							<li class="submenu">
-								<a href="#">Robot</a>
-								<ul>
-									<li><a href="left-sidebar.html">Design</a></li>
-									<li><a href="right-sidebar.html">Performance</a></li>
-								</ul>
-                                
-				<li><a href="contact.html">Takeaways</a></li>
-									<!--<li class="submenu">
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
-										</ul>
-									</li> -->
-								</ul>
+							<li><a href="robot_design.html">Robot Design</a></li>
+							<li><a href="robot_performance.html">Robot Performance</a></li>                                
+							<li><a href="team.html">Meet the Team</a></li>
 							</li>
-							<!--<li><a href="#" class="button primary">Sign Up</a></li>-->
 						</ul>
 					</nav> 
 				</header>
@@ -59,12 +52,14 @@
 					-->
 					<div class="inner">
 
-						<img src="sparqeePic1.JPG" alt="Norway" style="width:100%;">
-                        
+						<img src="images/SPARQEE_360.gif"  style="height: 400px;">
+						<img src="images/team.png"  style="height: 400px;">
+						<br/><br/>
+                        <!-- <span>Team 11 (from left to right): Noah Tajwar, Sean Bergman, Yas Oloumi Yazdi, Oleksii (Alex) Proskurin</span><br/><br/> -->
                         <header>
 							<h2>SPARQEE</h2>
 						</header>
-						<p><strong>Special Purpose Autonomous Robot for Quick Ewok Extraction </strong></p>
+						<p id="acronym"><b>S</b>pecial <b>P</b>urpose <b>A</b>utonomous <b>R</b>obot for <b>Q</b>uick <b>E</b>wok <b>E</b>xtraction</p>
 						<footer>
 							<ul class="buttons stacked">
 								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
@@ -78,16 +73,25 @@
 			<!-- The Challenge -->
 				<article id="main">
 
-					<header class="special container">
-						<span>
-                            <img src= "enphLogo.png" width="100" height="100">
-                        </span> 
+					<header class="container">
+                    	<div style="text-align: center;">
+							<img src= "images/eng_phys.png" width="200px">
+						</div>
                         <br>
                       
 						<h2>EWOK RESCUE! 2018 UBC ENGINEERING PHYSICS ROBOT COMPETITION</h2>
                         
-                        <p> <strong>The Story </strong> <br> : Chewbacca and his adorable ewok associates are trapped inside the evil Empire stronghold!
-                        Our role was to develop  C-3PO (our robot) to autonomously save Chewbacca and the ewoks.<br>
+                        <p> <strong>Introduction </strong>: <br>  For more than fifteen years, this robotics competition has been a core part of the second year UBC Engineering Physics program. The competition acts as the final exam of our intensive four month course, ENPH 253: Introduction to Instrument Design. For most of us, this was our first time getting practice in 
+                            <li>engineering design and instrument development including mechanical and electrical design</li>
+                            <li>communications with sensors, and actuators</li>
+                            <li>micro-controller implementation and system integration, </li>  all of which came together in our robot design.
+                        <br>
+                        
+                         </p>
+                        <p> </p>
+                        
+                        <p> <strong>The Story </strong>: <br>  Chewbacca and his adorable ewok associates are trapped inside the evil Empire stronghold!
+                        Our role was to develop  C-3PO (our robot, SPARQEE) to autonomously save Chewbacca and the ewoks.<br>
                         
                          </p>
                         <p> </p>
@@ -96,7 +100,9 @@
                         
                         
                                 <p>
-                            <img src= "competitionSurface.png" width="300" height="300">
+                            <img src= "competitionSurface.png" width="500" height="400">
+                                    
+                                    
                             
                         </p>
                            <p> 
@@ -108,192 +114,37 @@
                                <li>Ride a zipline back to rescue rendezvous point at the start of the course</li>
                                    
 						</p>
-					</header>
-
-                    
-                    <!-- Meet the Team -->
-						<section class="wrapper style3 container special">
-
-							<header class="major">
-								<h2>Meet the <strong>Team</strong></h2>
-							</header>
-
-							<div class="row">
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<img src="teamPics/noah.png"  >
-										<header>
-											<h3>Noah Tajwar</h3>
-										</header>
-										<p>Great Person</p>
-									</section>
-
-								</div>
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Yas Oloumi Yazdi</h3>
-										</header>
-										<p>Love her</p>
-									</section>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Oleksii (Alex) Proskurin</h3>
-										</header>
-										<p>Nice Person</p>
-									</section>
-
-								</div>
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Sean Bergman</h3>
-										</header>
-										<p>Person</p>
-									</section>
-
-								</div>
-							</div>
-
-							<!--<footer class="major">
-								<ul class="buttons">
-									<li><a href="#" class="button">See More</a></li>
-								</ul>
-							</footer>-->
-
-						</section>
-                    
-                    
-                    <!-- AFTER THIS SECTION I HAVE NOT USED ANYTHING -->
-                    
-                    
-                
-                    
-                    <!-- Random -->
-						<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>This is Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Also Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Probably Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-							</div>
-						</section>
-                    
-                    
-                    
-                    
-					<!-- One -->
-						<section class="wrapper style2 container special-alt">
-							<div class="row gtr-50">
-								<div class="col-8 col-12-narrower">
-
-									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
-										</ul>
-									</footer>
-
-								</div>
-								<div class="col-4 col-12-narrower imp-narrower">
-
-									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-									</ul>
-
-								</div>
-							</div>
-						</section>
-
-					
-
-					
-
-				</article>
-
-			<!-- CTA -->
-				<!--<section id="cta">
-
-					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
-					</header>
-					<footer>
-						<ul class="buttons">
-							<li><a href="#" class="button primary">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
-						</ul>
-					</footer>
-
-				</section>-->
+                        
+                        <p>
+                         <strong>CAD Model of SPARQEE on Competition Surface   </strong> </p>
                         
                         
+                                <p>
+                            <img src= "sparqeeOnCompSurfaceCAD.png" width="500" height="500">
+                                    
+                                    
+                            
+                        </p>
+                        
+                        <p>
+                         <strong>SPARQEE on Competition Day   </strong> </p>
+                        
+                        
+                                <p>
+                            <img src= "spar1.png"  style="width:100%;">
+                                    <img src= "spar2.jpg"  width= "500" height= "650">
+                                    
+                                    
+                            
+                        </p>
+                        
+                        
+                        
+					</header>
 
-			<!-- Footer -->
-				<footer id="footer">
+         
 
-					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
-
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-				</footer>
+		
 
 		</div>
 
