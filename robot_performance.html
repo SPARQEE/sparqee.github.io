@@ -62,17 +62,20 @@
 					<header class="special">
 						<h3><strong>Pre-Competition</strong></h3>
 					</header>
+
+					<p>The day before competition we were able to successfully pick up one Ewok, cross the first gap, and pick up a second Ewok.</p>
+
+					<!-- SPARQEE's Perspective -->
 					<div class="row gtr-150" style="display: table;">
 
 						<!-- Caption -->
 						<div class="col-6 col-12-narrower" style="display: table-cell; vertical-align: middle;">
 
-								<div class="sidebar">
+								<div class="sidebar" style="text-align: center;">
 									<section>
 										<header>
-											<h3><b>From SPARQEE's Perspective</b></h3>
+											<h3><b>SPARQEE's Perspective</b></h3>
 										</header>
-										<p>The day before competition we were able to successfully pick up one Ewok, cross the first gap, and pick up a second Ewok.</p>
 									</section>
 								</div>
 
@@ -81,11 +84,37 @@
 						<!-- Video -->
 						<div class="col-6 col-12-narrower">
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/o4rNmBha4uw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/o4rNmBha4uw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 						</div>
 
 					</div>
+
+					<!-- External Perspective -->
+					<div class="row gtr-150" style="display: table;">
+						
+						<!-- Caption -->
+						<div class="col-6 col-12-narrower" style="display: table-cell; vertical-align: middle;">
+
+								<div class="sidebar" style="text-align: center;">
+									<section>
+										<header>
+											<h3><b>External Perspective</b></h3>
+										</header>
+									</section>
+								</div>
+
+						</div>
+
+						<!-- Video -->
+						<div class="col-6 col-12-narrower">
+
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/nZ-zjaZdK6E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+						</div>
+
+					</div>
+
 				</section> <!-- end Pre-Competition -->
 
 				<!-- Competition Day -->
@@ -100,11 +129,11 @@
 
 							<div class="sidebar">
 								<section>
-									<!-- <img src="images/blue_pill.jpg" alt="Blue Pill" style="width: 100%;" /> -->
 									<header>
-										<h3>Round 1</h3>
+										<h3 style="text-align: center; font-size: 200%;">Round 1</h3>
 									</header>
-									<p>Efficient low-power microcontroller responsible for processing of sensor inputs, actuating motors and communicating with the Raspberry Pi or a UART connection</p>
+									<p style="text-align: center; font-size: 150%;">SPARQEE vs. KAICHAEL MO</p>
+									<h4 style="text-align: center;">0 - 2</h4>
 								</section>
 							</div>
 
@@ -115,11 +144,11 @@
 
 							<div class="sidebar">
 								<section>
-									<!-- <img src="images/pi+camera.jpg" alt="Raspberry Pi + Camera" style="width: 100%;" /> -->
 									<header>
-										<h3>Round 2</h3>
+										<h3 style="text-align: center; font-size: 200%;">Round 2</h3>
 									</header>
-									<p>High-power processor capable of quickly analyzing a stream of images from the camera using Computer Vision and communicating the results to the Blue Pill over a UART connection</p>
+									<p style="text-align: center; font-size: 150%;">SPARQEE vs. STEV-E</p>
+									<h4 style="text-align: center;">0 - 0</h4>
 								</section>
 							</div>
 
@@ -129,79 +158,29 @@
 				
 				</section> <!-- end Competition Day -->
 
-				<!-- Software -->
+				<!-- Results -->
 				<section class="wrapper style4 container">
+
 					<header class="special">
-						<span class="icon fa-code"></span>
-						<h3><strong>Software Components</strong></h3>
+						<h3><strong>Results</strong></h3>
+						<p style="text-align: left;">
+							Unfortunately, during the competition day SPARQEE did not perform as expected.
+							During the first round one of our H-bridges got unplugged and by the time we figured out that was the issue we were out of time.
+							Once we got that fixed and checked all the other connectors we thought we were ready for round two and were pretty confident we would at least score 2 points and if we got lucky - 6.
+							Unfortunately SPARQEE didn’t agree with us and we ended up scoring no points at all, although it wasn’t due to not being able to move this time.
+						</p>
+						<img src="images/sparqee_competition.png" alt="SPARQEE on Competition Day" style="height: 400px;" />
+						<p style="text-align: left;">
+							In second round we tape-followed very smoothly to first Ewok, but SPARQEE failed to identify it, and decided to abandon it.
+							Once it abandoned the first Ewok, SPARQEE crossed the gap and tried to identify the second Ewok but failed.
+							We knew that Ewok was detected for split second in each case, since SPARQEE would stop right in front of it, but it would stop detecting Ewoks shortly after.
+							We kept restarting the course until we ran out of time, but each time the same thing would happen.
+						</p>
+						<p style="text-align: left;">
+							Upon thorough analysis of the images that were used to detect Ewoks during competition day we noticed that the contrast between the surface and the Ewok wasn't as high as in our test environment, and that was due to uneven lighting in the lecture room during the competition day (front lights were off in order for the audience to see the projector screens). 
+						</p>
 					</header>
-					<div class="row gtr-150">
-
-						<!-- Computer Vision -->
-						<div class="col-4 col-12-narrower">
-
-								<div class="sidebar">
-									<section>
-										<img src="images/computer_vision.png" alt="Computer Vision" style="width: 100%;" />
-										<header>
-											<h3>Computer Vision</h3>
-										</header>
-										<p>OpenCV was used to filter the image and extract contours, so we were able to identify whether or not an Ewok was present in the frame of the camera, and if so, the location of the center of the Ewok</p>
-									</section>
-								</div>
-
-						</div>
-
-						<!-- Arm Control -->
-						<div class="col-4 col-12-narrower">
-
-							<div class="sidebar">
-								<section>
-									<img src="images/arm_control.png" alt="Arm Control" style="width: 100%;" />
-									<header>
-										<h3>Arm Control</h3>
-									</header>
-									<p>Using vector mathematics, the position of the Ewok within the image was converted to the servo motor angles required to position the claw directly above the Ewok</p>
-								</section>
-							</div>
-
-						</div>
-
-						<!-- Tape Following -->
-						<div class="col-4 col-12-narrower">
-
-								<div class="sidebar">
-									<section>
-										<img src="images/tape_following.jpg" alt="Tape Following" style="width: 100%;" />
-										<header>
-											<h3>Tape Following</h3>
-										</header>
-										<p>A PID algorithm was used to ensure our robot continuously corrected for any deviation from the tape</p>
-									</section>
-								</div>
-
-						</div>
-
-						<!-- Communication -->
-						<!-- <div class="col-4 col-12-narrower">
-
-							<div class="sidebar">
-								<section>
-									<img src="images/communication.jpg" alt="Communication" style="width: 100%;" />
-									<header>
-										<h3>Communication Protocol</h3>
-									</header>
-									<p>Communication between the Blue Pill and Raspberry Pi was done over a UART connection using a custom messaging protocol</p>
-								</section>
-							</div>
-
-						</div> -->
-					</div>
-					<!-- <div class="row gtr-150">
-
-							
-
-					</div> -->
+					
 				</section> <!-- end Software -->
 
 			</article>
